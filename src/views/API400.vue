@@ -71,6 +71,7 @@
                 <v-row style="height:100%">
                     <v-col class="d-flex align-center justify-center" >
                         <div>
+                            <v-icon class="ml-15" color="white" x-large>fas fa-desktop</v-icon>
                             <v-carousel v-model="model" hide-delimiters height="200px">
                                   <template v-slot:prev="{ on, attrs }">
                                     <v-icon  v-bind="attrs" v-on="on">
