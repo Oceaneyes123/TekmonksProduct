@@ -32,10 +32,20 @@
                     </v-col>
                     <v-col class="d-flex align-center justify-center">
                        <div>
-                            <v-carousel v-model="model" hide-delimiters height="200px">
+                            <v-carousel v-model="model" hide-delimiters hide-arrow-background height="200px">
+                                 <template v-slot:prev="{ on, attrs }">
+                                    <v-icon  v-bind="attrs" v-on="on" color="black">
+                                        fas fa-chevron-circle-left
+                                    </v-icon>
+                                </template>
+                                <template v-slot:next="{ on, attrs }">
+                                    <v-icon v-bind="attrs" v-on="on"  color="black">
+                                        fas fa-chevron-circle-right
+                                    </v-icon>
+                                </template>
                             <v-carousel-item
-                                v-for="(color, i) in colors"
-                                :key="color"
+                                v-for="i in 4"
+                                :key="i"
                                 >
                                 <div class="d-flex align-center px-15" style="height:100%">
                                         <div>
@@ -57,14 +67,24 @@
         </v-img>
 
          <v-img src="../assets/api400/api400-blue-bg.png">
-            <v-container style="height:100%">
+            <v-container style="height:100%;position:relative">
                 <v-row style="height:100%">
                     <v-col class="d-flex align-center justify-center" >
                         <div>
                             <v-carousel v-model="model" hide-delimiters height="200px">
+                                  <template v-slot:prev="{ on, attrs }">
+                                    <v-icon  v-bind="attrs" v-on="on">
+                                        fas fa-chevron-circle-left
+                                    </v-icon>
+                                </template>
+                                <template v-slot:next="{ on, attrs }">
+                                    <v-icon v-bind="attrs" v-on="on">
+                                        fas fa-chevron-circle-right
+                                    </v-icon>
+                                </template>
                                 <v-carousel-item
-                                    v-for="(color, i) in colors"
-                                    :key="color"
+                                    v-for="i in 4"
+                                    :key="i"
                                     >
                                 <div class="d-flex align-center px-15" style="height:100%">
                                         <div>
@@ -83,10 +103,12 @@
                     </v-col>
 
                      <v-col class="d-flex">
-                        <div style="padding-bottom:100px">
+                        <div class="pt-5">
                             <div class="font-weight-black display-3">Let API/400 <br/> Unlock Your </div>
                             <div class="font-weight-bold display-4" style="color:#F3712C;">IBM i</div>
+                            <img src="../assets/api400/api400-blue-img.png" alt="" width="500" style="position:absolute;bottom:0">
                         </div>
+                        
                     </v-col>
                 </v-row>
             </v-container>
@@ -119,13 +141,6 @@ export default {
     data(){
         return{
             model: 0,
-            colors: [
-                'primary',
-                'secondary',
-                'yellow darken-2',
-                'red',
-                'orange'
-                ],
         }
     }
 }
