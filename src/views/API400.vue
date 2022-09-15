@@ -3,7 +3,7 @@
         <v-img src="../assets/api400/api400-orange-bg.png">
             <v-container>
                 <v-row>
-                    <v-col class="d-flex align-center display-3 font-weight-bold">
+                    <v-col class="d-flex align-center display-3 font-weight-bold cp-font">
                         <div> 
                             <div style="color:#1B5775">
                                 Peaceful Journey
@@ -11,7 +11,7 @@
                             <div class="white--text">
                                 To the Digital Marketplace
                             </div>
-                            <v-btn outlined class="rounded-lg mt-5" x-large>Schedule a demo <v-icon class="pl-3">fas fa-long-arrow-right</i></v-icon></v-btn>
+                            <v-btn outlined class="rounded-lg mt-5 cp-font" x-large>Schedule a demo <v-icon class="pl-3">fas fa-long-arrow-right</i></v-icon></v-btn>
                         </div>
                     </v-col>
                     <v-col>
@@ -25,9 +25,9 @@
                 <v-row style="height:100%">
                     <v-col class="d-flex align-center  pl-5">
                         <div style="padding-bottom:100px">
-                            <div class="font-weight-black display-4">Your</div>
-                            <div class="font-weight-bold display-3" style="color:#F3712C;">Green <br> Screens</div>
-                            <div  class="font-weight-bold display-3">Workplace</div>
+                            <div class="font-weight-black display-4 cp-font">Your</div>
+                            <div class="font-weight-bold display-3 cp-font" style="color:#F3712C;">Green <br> Screens</div>
+                            <div  class="font-weight-bold display-3 cp-font" >Workplace</div>
                         </div>
                     </v-col>
                     <v-col class="d-flex align-center justify-center">
@@ -49,17 +49,17 @@
                                 >
                                 <div class="d-flex align-center px-15" style="height:100%">
                                         <div>
-                                            <div class="text-h6 mb-5">
+                                            <div class="text-h6 mb-5 cp-font">
                                                 Integration where you need it!
                                             </div>
-                                            <div class="">
+                                            <div class="cp-font">
                                                 With APIs and API/400’s secured gateway we have the access you need. Whether mobile, web interface, B2B program integration or IBM i Modernization, we can do it all.
                                             </div>
                                         </div>
                                 </div>
                                 </v-carousel-item>
                             </v-carousel>
-                            <v-btn outlined class="rounded-lg mt-5 ml-15" large color="#F3712C">Schedule a demo <v-icon class="pl-3" color="#F3712C">fas fa-long-arrow-right</i></v-icon></v-btn>
+                            <v-btn outlined class="rounded-lg mt-5 ml-15 cp-font" large color="#F3712C">Schedule a demo <v-icon class="pl-3" color="#F3712C">fas fa-long-arrow-right</i></v-icon></v-btn>
                         </div>
                     </v-col>
                 </v-row>
@@ -88,10 +88,10 @@
                                     >
                                 <div class="d-flex align-center px-15" style="height:100%">
                                         <div>
-                                            <div class="white--text text-h6 mb-5">
+                                            <div class="white--text text-h6 mb-5 cp-font">
                                                 No More Screen Scraping!
                                             </div>
-                                            <div class="white--text">
+                                            <div class="white--text cp-font">
                                                 API/400 can access all the programs and information, not just those visible through 5250 screens, with our native integration.
                                             </div>
                                         </div>
@@ -104,8 +104,8 @@
 
                      <v-col class="d-flex">
                         <div class="pt-5">
-                            <div class="font-weight-black display-3">Let API/400 <br/> Unlock Your </div>
-                            <div class="font-weight-bold display-4" style="color:#F3712C;">IBM i</div>
+                            <div class="font-weight-black display-3 cp-font">Let API/400 <br/> Unlock Your </div>
+                            <div class="font-weight-bold display-4 cp-font" style="color:#F3712C;">IBM i</div>
                             <img src="../assets/api400/api400-blue-img.png" alt="" width="500" style="position:absolute;bottom:0">
                         </div>
                         
@@ -122,9 +122,9 @@
                     </v-col>
                      <v-col class="d-flex align-center">
                        <div>
-                            <div class="white--text font-weight-black display-3">Light Weight</div>
-                            <div style="color:#F3712C;" class="font-weight-black display-3">Heavy Duty</div>
-                             <v-btn class="rounded-lg mt-5 white--text" large color="#1B5775">Schedule a demo <v-icon class="pl-3" color="white">fas fa-long-arrow-right</i></v-icon></v-btn>
+                            <div class="white--text font-weight-black display-3 cp-font">Light Weight</div>
+                            <div style="color:#F3712C;" class="font-weight-black display-3 cp-font">Heavy Duty</div>
+                             <v-btn class="rounded-lg mt-5 white--text cp-font" large color="#1B5775">Schedule a demo <v-icon class="pl-3" color="white">fas fa-long-arrow-right</i></v-icon></v-btn>
                        </div>
                     </v-col>
                 </v-row>
@@ -145,3 +145,9 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+    .cp-font{
+        font-family: 'Chakra Petch', sans-serif !important;
+    }
+</style>
